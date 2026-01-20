@@ -1,0 +1,125 @@
+{
+	"easycom": {
+			// 注意一定要放在custom里，否则无效，https://ask.dcloud.net.cn/question/131175
+			"custom": {
+				"^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
+				"^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+		        "^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue"
+			}
+		},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "clinicPlus",
+				"enablePullDownRefresh" : true,
+				// #ifdef MP-WEIXIN
+				"navigationStyle": "custom"
+				// #endif
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"enablePullDownRefresh" : true,
+				// #ifdef MP-WEIXIN
+				"navigationStyle": "custom"
+				// #endif
+			}
+		},
+		{
+			"path":"pages/login/register",
+			"style":{
+				"navigationBarTitleText": "注册",
+				"enablePullDownRefresh" : true,
+				// #ifdef MP-WEIXIN
+				"navigationStyle": "custom"
+				// #endif
+			}
+		},
+		 {
+		      "path": "pages/chat/index",
+		      "style": {
+		        "navigationBarTitleText": "会话",
+				"enablePullDownRefresh" : true,
+				// #ifdef MP-WEIXIN
+				"navigationStyle": "custom"
+				// #endif
+		      }
+		    },
+		    {
+		      "path": "pages/treatment/index",
+		      "style": {
+		        "navigationBarTitleText": "疗程",
+				"enablePullDownRefresh" : true,
+				// #ifdef MP-WEIXIN
+				"navigationStyle": "custom"
+				// #endif
+		      }
+		    },
+		    {
+		      "path": "pages/community/index",
+		      "style": {
+		        "navigationBarTitleText": "社区",
+				"enablePullDownRefresh" : true,
+				// #ifdef MP-WEIXIN
+				"navigationStyle": "custom"
+				// #endif
+		      }
+		    },
+		    {
+		      "path": "pages/profile/index",
+		      "style": {
+		        "navigationBarTitleText": "我的",
+				"enablePullDownRefresh" : true,
+				// #ifdef MP-WEIXIN
+				"navigationStyle": "custom"
+				// #endif
+		      }
+		    }
+		
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	// 配置tabbar导航栏
+		"tabBar": {
+			"borderStyle": "black",
+			"selectedColor": "#44AF86",
+			"color": "#444444",
+			"list": [
+				{
+					"pagePath": "pages/index/index",
+					"iconPath": "static/tabbar/shouye.png",
+					"selectedIconPath": "static/tabbar/shouye-selected.png",
+					"text": "首页"
+				},{
+					"pagePath": "pages/chat/index",
+					"iconPath": "static/tabbar/huihua.png",
+					"selectedIconPath": "static/tabbar/huihua-selected.png",
+					"text": "会话"
+				},{
+					"pagePath": "pages/treatment/index",
+					"iconPath": "static/tabbar/liaocheng.png",
+					"selectedIconPath": "static/tabbar/liaocheng-selected.png",
+					"text": "疗程"
+				},{
+					"pagePath": "pages/community/index",
+					"iconPath": "static/tabbar/shequ.png",
+					"selectedIconPath": "static/tabbar/shequ-selected.png",
+					"text": "社区"
+				},{
+					"pagePath": "pages/profile/index",
+					"iconPath": "static/tabbar/wode.png",
+					"selectedIconPath": "static/tabbar/wode-selected.png",
+					"text": "我的"
+				}
+			]
+		}
+	
+
+}
