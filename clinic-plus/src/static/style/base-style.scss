@@ -7,15 +7,28 @@ $primary-gradient: linear-gradient(135deg, #44AF86 0%, #6BC5A4 100%); // 渐变�
 $qingse-light: #BBF5EE; // 淡青色 背景-点缀
 $qingse: #49B9AD; // 青色 背景
 
+// 同色系渐变点缀（强化主色层次感）
+$primary-mid: #7DD6CB;          // 主色中青绿
+$primary-ultra-light: #DDF9F5;  // 主色极浅青绿
+
+// ===== 点缀色 ====
+
+
 // ===== 辅助色 =====
 $pxx_blue: #5A8BFF;       // 辅助蓝
 $pxx_purple: #A855F7;     // 辅助紫
 $pxx_orange: #FCAE7A;    		 // 辅助橙
+$pxx_orange_dark: #FF7C50;    		 // 辅助深橙
 $pxx_orange-light: #FFE0B6;     // 辅助浅橙
+$pxx_orange-light-light: #FFF2E8;     // 辅助浅浅橙
 $pxx_red: #F65755;        		// 辅助红
-$pxx_red-light: #FFBEBE;        // 辅助红
+$pxx_red-light: #FFBEBE;        // 辅助浅红
+$pxx_red-light-light: #FEF1F1;        // 辅助浅浅红
 $pxx_green: #49B9AD;        	// 辅助绿
 $pxx_green-light: #B5F5EC;      // 辅助浅绿
+$pxx_green-light-light: #E2FFF8;      // 辅助浅浅绿
+$pxx_gray: #606972; 				// 辅助灰
+$pxx_gray_light: #eeeeee;		//辅助浅灰
 
 // ===== 中性色 =====
 $text-primary: #333333;         // 主文字
@@ -27,8 +40,14 @@ $border-light: #E4E7ED;         // 浅边框
 $bg-color: #F5F5F5;             // 背景色
 $bg-white: #FFFFFF;             // 白色背景
 $bg-gray: #F8FAFC;              // 灰色背景
-$ba-white-trans:rgba(255, 255, 255, 0.8); // 白色半透明背景
+$ba-white-trans:rgba(255, 255, 255, 0.6); // 白色半透明背景
 $shadow-color: rgba(0, 0, 0, 0.1); // 阴影颜色
+
+// 中性功能点缀色（平衡色调，提升界面舒适度）
+$neutral-bg-light: #F5F7FA;     // 中性浅灰蓝（页面/卡片背景）
+$neutral-bg-greenish: #E8F4F2;  // 中性青绿灰（次级卡片/弹窗背景）
+$neutral-text-secondary: #86909C; // 中性柔和灰（次要文字/分割线）
+
 
 // ===== 功能色 =====
 $success-color: #10B981;        // 成功
@@ -36,6 +55,13 @@ $warning-color: #F97316;        // 警告
 $error-color: #EF4444;          // 错误
 $info-color: #3B82F6;           // 信息
 $danger-color: #DC2626;         // 危险
+
+// 功能警示类点缀色（低饱和，契合医疗场景）
+$functional-success: #66C262;   // 功能浅草绿（成功状态/完成标识）
+$functional-warning: #F2A365;   // 功能暖橙黄（警告提示/待办标识）
+$functional-error: #E66767;     // 功能柔粉红（错误提示/删除操作）
+$functional-emphasis: #5D87C8;  // 功能浅蓝紫（重点强调/核心按钮）
+
 
 // ===== 状态色 =====
 $hover-color: rgba(68, 175, 134, 0.1);  // 悬浮状态
