@@ -65,7 +65,8 @@
         },
         "unipush" : {
             "enable" : true
-        }
+        },
+		"mergeVirtualHostAttributes" : true
     },
     "mp-alipay" : {
         "usingComponents" : true
@@ -74,7 +75,8 @@
         "usingComponents" : true
     },
     "mp-toutiao" : {
-        "usingComponents" : true
+        "usingComponents" : true,
+		"mergeVirtualHostAttributes" : true
     },
     "uniStatistics" : {
         "enable" : false

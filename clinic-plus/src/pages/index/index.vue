@@ -1,9 +1,6 @@
 <template>
   <view class="index-patient">
-		
 		<view class="index-patient__top-bg"> <!-- 页面顶部区块 -->
-		
-			
 			<view class="index-patient__top-section"> <!-- 最顶部部分 -->
 			  <!-- 当前位置信息 -->
 			  <view class="index-patient__location">
@@ -17,31 +14,37 @@
 			</view> <!-- 最顶部部分 -->
 			
 			<!-- 今日健康任务 板块 -->
-			<daily-health-task
+			<daily-health-task-section
 			:treatment-list="treatmentList"
 			:current-date="currentDate"
 			:hasMoreTasks="hasMoreTasks"
 			@view-more="handleViewMore"
 			@task-click="handleTaskClick"
 			>
-			</daily-health-task>
+			</daily-health-task-section>
 			
-		
-			<!-- 页面中间内容 发现诊所板块 -->
-			<view class="index-patient__find-clinic">
-			  <!-- ... -->
-			</view>
 		</view>
+		
+		<!-- 找诊所 板块 -->
+		<view class="index-patient__find-clinic-section">
+			<find-clinic-section></find-clinic-section>	
+		</view>
+		<!-- 社区帖子推荐板块 -->
+		<view class="index-patient__post-push-section">
+			<post-push-section></post-push-section>
+		</view>
+		
   </view>
 </template>
 
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 import type { TTreatmentInfo} from '@/types/treatment/daily-health-task.types'
-
+// 组件
 import searchBox from '@/components/universal/SearchBox.vue'
-// import healthTaskCondense from '@/components/patient/HealthTaskCondense.vue'
-import dailyHealthTask from '@/components/patient/DailyHealthTask.vue'
+import dailyHealthTaskSection from '@/components/patient/DailyHealthTaskSection.vue'
+import findClinicSection from '@/components/clinic/FindClinicSection.vue'
+import postPushSection from '@/components/community/PostPushSection.vue'
 
 const position = ref<string>('点击选择地址 >') // 当前地址信息
 // const current_date = ref<string>('2026.01.19') // 当前日期
@@ -199,13 +202,12 @@ const handleTaskClick = (TreatmentTask: any) => {
 .index-patient__search-section {
   margin-top: 25rpx;
 }
-
-
-/* 块：daily-health-task 的主体元素 */
-.daily-health-task__body {
-  // display: flex;
-  // align-items: center;
-  // justify-content: flex-start;
-  //gap: 20rpx;
+// 找诊所板块
+.index-patient__find-clinic-section{
+	margin-top: 20rpx;
+}
+// 帖子推送板块
+.index-patient__post-push-section{
+	margin-top: 20rpx;
 }
 </style>

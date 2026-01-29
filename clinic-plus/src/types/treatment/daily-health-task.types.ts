@@ -41,27 +41,27 @@ export type TTreatmentInfo = {
   // 疗程名称
   treatmentName: string
   // 诊所ID
-  clinicId: number
+  clinicId?: number
   // 诊所名称
   clinicName: string
   // 医生ID
-  doctorId: number
+  doctorId?: number
   // 医生名称
   doctorName: string
   // 疗程总天数
-  totalDays: number
+  totalDays?: number
   // 疗程已进行天数
-  completedDays: number
+  completedDays?: number
   // 疗程进度百分比（计算字段）
-  progress: number
+  progress?: number
   // 健康任务列表
   healthTasks: THealthTaskItem[]
   // 疗程开始时间
-  startTime: string
+  startTime?: string
   // 疗程结束时间
-  endTime: string
+  endTime?: string
   // 疗程状态：0-进行中 1-已完成 2-已暂停 3-已终止
-  status: number
+  status?: number
   // 该疗程当日包含的健康任务数大于3时为真
-  has_more_task:boolean
+  has_more_task?:boolean
 }

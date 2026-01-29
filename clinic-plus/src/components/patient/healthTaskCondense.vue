@@ -69,7 +69,7 @@
 		width: 450rpx;
 		height: 380rpx;
 		overflow: hidden;
-		border-radius: 10rpx;
+		border-radius: 15rpx;
 		margin-bottom: 10rpx;
 	}
 	.health-task-condense__treatment-name{
