@@ -11,8 +11,8 @@
 		font-size:30rpx;
 		font-weight:400;
 		background:#49B9AD;
-		padding:10rpx 15rpx 12rpx 15rpx;
-		border-radius:20rpx;
+		padding:10rpx 35rpx 12rpx 35rpx;
+		border-radius:50rpx;
 		margin-left:15rpx
 		"
 		inputStyle="
@@ -31,6 +31,9 @@
 
 <style lang="scss">
 	.search-box-container{
-		
+		background-color: #ffffff;
+		border-radius: 50rpx;
+		padding: 5rpx 10rpx;
+		width: 100%;
 	}
 </style>

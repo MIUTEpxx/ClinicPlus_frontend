@@ -67,7 +67,7 @@
 		background-color: $ba-white-trans;
 		box-shadow: 0 3rpx 10rpx $shadow-color;
 		width: 450rpx;
-		height: 380rpx;
+		height: 375rpx;
 		overflow: hidden;
 		border-radius: 15rpx;
 		margin-bottom: 10rpx;
@@ -75,7 +75,7 @@
 	.health-task-condense__treatment-name{
 		padding: 10rpx 15rpx;
 		color: $text-primary;
-		font-size: 30rpx;
+		font-size: 32rpx;
 		font-weight: 500;
 		width: 95%;                /* 或固定宽度 */
 		overflow: hidden;

@@ -45,6 +45,7 @@
 </template>
 
 <script setup lang="ts">
+
 import { computed } from 'vue'
 import HealthTaskCondense from '@/components/patient/HealthTaskCondense.vue'
 import type { TTreatmentInfo,THealthTaskItem} from '@/types/treatment/daily-health-task.types'
@@ -78,9 +79,11 @@ const handleViewMore = () => {
 }
 
 
+
+
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 /* 块：daily-health-task */
 .daily-health-task-container {
  margin: 20rpx 0;

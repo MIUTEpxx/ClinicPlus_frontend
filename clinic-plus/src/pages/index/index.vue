@@ -4,8 +4,7 @@
 			<view class="index-patient__top-section"> <!-- 最顶部部分 -->
 			  <!-- 当前位置信息 -->
 			  <view class="index-patient__location">
-				<i class="iconfont icon-dizhi index-patient__location-icon"></i>
-				<view class="index-patient__location-info">{{ position }}</view>
+				<location></location>
 			  </view>
 			  <!-- 顶部搜索框 -->
 			  <view class="index-patient__search-section">
@@ -45,6 +44,7 @@ import searchBox from '@/components/universal/SearchBox.vue'
 import dailyHealthTaskSection from '@/components/patient/DailyHealthTaskSection.vue'
 import findClinicSection from '@/components/clinic/FindClinicSection.vue'
 import postPushSection from '@/components/community/PostPushSection.vue'
+import location from '@/components/universal/Location.vue'
 
 const position = ref<string>('点击选择地址 >') // 当前地址信息
 // const current_date = ref<string>('2026.01.19') // 当前日期
@@ -180,9 +180,7 @@ const handleTaskClick = (TreatmentTask: any) => {
 .index-patient__location {
   padding-top: 90rpx;
   margin-left: 10rpx;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
+
 }
 
 /* 块：index-patient 的位置图标元素 */
@@ -200,11 +198,14 @@ const handleTaskClick = (TreatmentTask: any) => {
 
 /* 块：index-patient 的搜索区域元素 */
 .index-patient__search-section {
+  display: flex;
   margin-top: 25rpx;
+  width: 100%;
 }
 // 找诊所板块
 .index-patient__find-clinic-section{
 	margin-top: 20rpx;
+	
 }
 // 帖子推送板块
 .index-patient__post-push-section{

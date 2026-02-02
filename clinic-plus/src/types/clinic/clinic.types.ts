@@ -1,7 +1,7 @@
 
 export type TClinicTag = {
 	tagId:number // 标签ID
-	tagName:string // 标签名称
+	name:string // 标签名称
 	tagType?:number // 标签类型(暂无定义)
 }
 

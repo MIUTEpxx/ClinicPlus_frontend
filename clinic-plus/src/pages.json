@@ -90,6 +90,19 @@
 			    "visible": false
 			}
 		  }
+		},
+		{
+		  "path": "pages/clinic/clinic-index",
+		  "style": {
+		    "navigationBarTitleText": "诊所主页",
+			"enablePullDownRefresh" : true,
+			// #ifdef MP-WEIXIN
+			"navigationStyle": "custom",
+			// #endif
+			 "tabBar":{
+			    "visible": false
+			}
+		  }
 		}
 		
 	],

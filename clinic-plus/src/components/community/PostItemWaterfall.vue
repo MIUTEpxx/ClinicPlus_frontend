@@ -1,8 +1,11 @@
 <template>
+	<view class="post-push-section-container">
+		
+	</view>
 </template>
 
-<script>
+<script setup lang="ts">
 </script>
 
-<style>
+<style lang="scss">
 </style>

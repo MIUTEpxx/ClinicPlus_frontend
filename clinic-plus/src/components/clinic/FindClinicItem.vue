@@ -1,5 +1,5 @@
 <template>
-	<view class="find-clinic-item-container">
+	<view class="find-clinic-item-container" @click="handleFindClinicClick">
 		<!-- 封面 -->
 		<view class="find-clinic-item__clinic-cover">
 			<up-image
@@ -49,6 +49,12 @@
 	const ratingCount = ref<number>(114514)
 	const tagList = ref<string[]>(["医保定点","入职体检","儿科"])
 	const clinicCover = ref<string>("/static/default/img/clinic_cover.png")
+
+	const handleFindClinicClick =()=>{
+		uni.navigateTo({
+			url: '/pages/clinic/clinic-index',
+		})
+	}
 </script>
 
 <style lang="scss">
