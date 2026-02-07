@@ -220,6 +220,7 @@ const sortClinic = (type: number) => {
   font-size: 40rpx;
   font-weight: bold;
   color: #ffffff;
+  margin-left: 15rpx;
 }
 
 .find-clinic__classification {

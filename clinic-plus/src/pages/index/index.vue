@@ -180,7 +180,6 @@ const handleTaskClick = (TreatmentTask: any) => {
 .index-patient__location {
   padding-top: 90rpx;
   margin-left: 10rpx;
-
 }
 
 /* 块：index-patient 的位置图标元素 */

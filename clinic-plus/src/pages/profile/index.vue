@@ -1,8 +1,12 @@
 <template>
+	<view class="profile-index">
+		<view class="profile-index__bg"></view>
+	</view>
 </template>
 
-<script>
+<script lang="ts" setup>
 </script>
 
-<style>
+<style lang="scss" scoped>
+	
 </style>

@@ -40,11 +40,11 @@
 			tags:[
 				{
 				tagId:1,
-				tagName:"医保定点",
+				name:"医保定点",
 				},
 				{
 				tagId:2,
-				tagName:"儿科",
+				name:"儿科",
 				},
 			]
 		},
@@ -57,11 +57,11 @@
 			tags:[
 				{
 				tagId:1,
-				tagName:"医保定点",
+				name:"医保定点",
 				},
 				{
 				tagId:2,
-				tagName:"儿科",
+				name:"儿科",
 				},
 			]
 		},
@@ -74,11 +74,11 @@
 			tags:[
 				{
 				tagId:1,
-				tagName:"医保定点",
+				name:"医保定点",
 				},
 				{
 				tagId:2,
-				tagName:"儿科",
+				name:"儿科",
 				},
 			]
 		},
@@ -87,7 +87,6 @@
 	// 事件, 点击j进入找诊所页面
 	const handleFindClinicClick = () => {
 	  // 直接在此处执行页面跳转
-	  //待实现
 	  uni.navigateTo({
 	  		url: '/pages/clinic/find-clinic',
 	  	})
