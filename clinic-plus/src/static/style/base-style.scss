@@ -4,6 +4,22 @@ $primary-light: #BBF5EE;        // 主色浅青绿
 $primary-dark: #37A095;         // 主色深绿
 $primary-gradient: linear-gradient(135deg, #44AF86 0%, #6BC5A4 100%); // 渐变背景
 
+// 主色系深度扩展
+$primary-ultra-dark: #2A8A7F;          // 主色超深绿（用于重要按钮激活状态）
+$primary-semi-dark: #3FA89D;           // 主色半深绿（用于悬停状态）
+$primary-semi-light: #8CE3D9;          // 主色半浅绿（用于次要按钮）
+
+// 主色透明度扩展
+$primary-10: rgba(73, 185, 173, 0.1);  // 10%透明度主色
+$primary-20: rgba(73, 185, 173, 0.2);  // 20%透明度主色  
+$primary-30: rgba(73, 185, 173, 0.3);  // 30%透明度主色
+$primary-50: rgba(73, 185, 173, 0.5);  // 50%透明度主色
+$primary-70: rgba(73, 185, 173, 0.7);  // 70%透明度主色
+
+// 渐变扩展
+$primary-gradient-light: linear-gradient(135deg, #6BC5A4 0%, #8CE3D9 100%); // 浅色渐变
+$primary-gradient-dark: linear-gradient(135deg, #2A8A7F 0%, #49B9AD 100%); // 深色渐变
+
 $qingse-light: #BBF5EE; // 淡青色 背景-点缀
 $qingse: #49B9AD; // 青色 背景
 
@@ -14,33 +30,76 @@ $primary-ultra-light: #DDF9F5;  // 主色极浅青绿
 
 // ===== 辅助色 =====
 $pxx_blue: #5A8BFF;       // 辅助蓝
+$pxx_blue-light: #8DB5FF;              // 辅助浅蓝
+$pxx_blue-ultra-light: #D6E4FF;       // 辅助极浅蓝
+$pxx_blue-dark: #3A6BD9;               // 辅助深蓝
+
 $pxx_purple: #A855F7;     // 辅助紫
+$pxx_purple-light: #C084FC;            // 辅助浅紫
+$pxx_purple-ultra-light: #E9D5FF;      // 辅助极浅紫
+$pxx_purple-dark: #9333EA;             // 辅助深紫
+
 $pxx_orange: #FCAE7A;    		 // 辅助橙
 $pxx_orange_dark: #FF7C50;    		 // 辅助深橙
 $pxx_orange-light: #FFE0B6;     // 辅助浅橙
 $pxx_orange-light-light: #FFF2E8;     // 辅助浅浅橙
+$pxx_orange-mid: #FFB07C;              // 辅助中橙
+$pxx_orange-ultra-light: #FFF9F5;      // 辅助极浅橙
+
 $pxx_red: #F65755;        		// 辅助红
 $pxx_red-light: #FFBEBE;        // 辅助浅红
 $pxx_red-light-light: #FEF1F1;        // 辅助浅浅红
+$pxx_red-mid: #FF7D7B;                 // 辅助中红
+$pxx_red-dark: #E64543;                // 辅助深红
+$pxx_red-ultra-light: #FFF5F5;         // 辅助极浅红
+
 $pxx_green: #49B9AD;        	// 辅助绿
 $pxx_green-light: #B5F5EC;      // 辅助浅绿
 $pxx_green-light-light: #E2FFF8;      // 辅助浅浅绿
+$pxx_green-mid: #5DC5B9;               // 辅助中绿
+$pxx_green-dark: #3A9D91;              // 辅助深绿
+$pxx_green-ultra-light: #F0FFFC;       // 辅助极浅绿
+
 $pxx_gray: #606972; 				// 辅助灰
 $pxx_gray_light: #eeeeee;		//辅助浅灰
 $pxx_gray_light_light: #f5f5f5;		//辅助浅浅灰
+$pxx_gray-mid: #8A94A6;                // 辅助中灰
+$pxx_gray-dark: #4A5568;               // 辅助深灰
+$pxx_gray-ultra-light: #FAFBFC;        // 辅助极浅灰
 
 // ===== 中性色 =====
 $text-primary: #333333;         // 主文字
 $text-regular: #666666;         // 常规文字
 $text-secondary: #999999;       // 辅助文字
 $text-placeholder: #CCCCCC;     // 占位文字
+$text-primary-dark: #1A1A1A;           // 深主文字（用于重要标题）
+$text-primary-light: #4D4D4D;           // 浅主文字（用于次要标题）
+$text-regular-dark: #595959;           // 深常规文字
+$text-regular-light: #7A7A7A;          // 浅常规文字
+$text-white:#ffffff; //白色文字
 $border-color: #CCCCCC;         // 边框色
 $border-light: #E4E7ED;         // 浅边框
+$border-color-light: #F0F0F0;          // 浅边框（用于分割线）
+$border-color-dark: #B8B8B8;           // 深边框（用于输入框边框）
+$border-color-ultra-light: #F7F7F7;    // 极浅边框
+
 $bg-color: #F5F5F5;             // 背景色
 $bg-white: #FFFFFF;             // 白色背景
 $bg-gray: #F8FAFC;              // 灰色背景
+$bg-color-light: #F9F9F9;              // 浅背景色
+$bg-color-dark: #EBEBEB;               // 深背景色
+$bg-color-ultra-light: #FCFCFC;        // 极浅背景色
+
 $ba-white-trans:rgba(255, 255, 255, 0.6); // 白色半透明背景
 $ba-dark-trans:rgba(45, 49, 54, 0.8); // 黑灰色半透明背景
+$white-10: rgba(255, 255, 255, 0.1);   // 10%白色
+$white-20: rgba(255, 255, 255, 0.2);   // 20%白色
+$white-50: rgba(255, 255, 255, 0.5);   // 50%白色
+$white-80: rgba(255, 255, 255, 0.8);   // 50%白色
+$black-5: rgba(0, 0, 0, 0.05);         // 5%黑色
+$black-10: rgba(0, 0, 0, 0.1);        // 10%黑色
+$black-20: rgba(0, 0, 0, 0.2);        // 20%黑色
+
 $shadow-color: rgba(80, 80, 80, 0.1); // 阴影颜色
 
 // 中性功能点缀色（平衡色调，提升界面舒适度）

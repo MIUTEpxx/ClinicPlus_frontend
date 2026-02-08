@@ -56,7 +56,7 @@ defineProps<{
 <style lang="scss" scoped>
 .clinic-header {
   background-color: $primary-color;
-  padding: 165rpx 0 80rpx 0;
+  padding: 100rpx 0 80rpx 0;
   
   &__title-container {
     display: flex;
@@ -79,6 +79,7 @@ defineProps<{
     width: 100vw;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+	margin-top: 30rpx;
     padding-left: 25rpx;
     
     &-item {
